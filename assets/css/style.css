@@ -1,5 +1,230 @@
-#main {
-    width: 100%;
-    height: 500px;
-    background-color: blue;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    z-index: 1;
+    transition: top 0.3s;
+}
+
+#header.hidden {
+    top: -100px;
+}
+.header-img {
+    margin-right: auto; 
+}
+
+.header-logo {
+    height: 70px;
+    padding-left: 20px;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav {
+    min-width: 650px;
+    margin-top: 16px;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav .subnav {
+    display: none;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(127, 127, 127);
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav a {
+    min-width: 140px;
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+
+#nav > li > a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: rgb(204, 204, 204);
+}
+
+#infor {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center; /* căn giữa các đối tượng con theo trục ngang */
+    margin-left: auto;
+    gap: 20px; /* khoảng cách giữa các đối tượng con */
+    padding-right: 20px;
+} 
+
+.infor-search {
+    padding: 22px 0;
+}
+
+.icon-search {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #cdcdcd;
+    color: black;
+    border-radius: 10%;
+}
+
+.icon-search:hover {
+    cursor: pointer;
+}
+
+.icon-search:active {
+    background-color: #a49b9b;
+}
+
+.infor-user, .infor-bag {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.txt-search {
+    height: 32px;
+    text-indent: 10px;
+    border: none;
+    background-color: #efefef;
+    border-radius: 5%;
+}
+
+.txt-search:focus {
+    outline: none;
+}
+
+#slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.slider-wrapper {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.radio-buttons label {
+    display: inline-block;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+  
+.radio-buttons label span {
+    display: none;
+}
+  
+.radio-buttons label input[type="radio"]:checked + span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+  
+#slider-container {
+    margin-left: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 1;
+}
+  
+.slider-controls label {
+    display: block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+  
+.slider-controls input[type="radio"] {
+    display: none;
+}
+  
+.slider-controls input[type="radio"] + span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+  
+.slider-controls input[type="radio"]:checked + span {
+    background-color: #333;
+}
+  
+#content {
+    height: 1000px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
