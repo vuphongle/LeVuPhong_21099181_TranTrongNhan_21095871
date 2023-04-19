@@ -25,6 +25,7 @@ html {
 #header.hidden {
     top: -100px;
 }
+
 .header-img {
     margin-right: auto; 
 }
@@ -34,20 +35,19 @@ html {
     padding-left: 20px;
 }
 
-#nav, .subnav {
+#nav-css, .subnav-css {
     list-style-type: none;
 }
 
-#nav {
-    min-width: 650px;
-    margin-top: 16px;
-}
+/* #nav {
+    margin-top: 17px;
+} */
 
-#nav li {
+#nav-css li {
     position: relative;
 }
 
-#nav .subnav {
+#nav-css .subnav-css {
     display: none;
     top: 100%;
     left: 0;
@@ -56,35 +56,40 @@ html {
     box-shadow: 0 0 10px rgb(127, 127, 127);
 }
 
-#nav li:hover .subnav {
+#nav-css li:hover .subnav-css {
     display: block;
 }
-#nav .subnav a {
+#nav-css .subnav-css a {
     min-width: 140px;
     color: black;
     padding: 0 12px;
     line-height: 38px;
 }
 
-#nav > li {
+#nav-css > li {
     display: inline-block;
+    /* margin-bottom: 0 !important; */
+}
+
+#nav-css {
+    margin-bottom: 0;
 }
 
 
-#nav > li > a {
+#nav-css > li > a {
     color: black;
     text-transform: uppercase;
 }
 
-#nav li a {
+#nav-css li a {
     text-decoration: none;
     line-height: 70px;
     padding: 0 24px;
     display: block;
 }
 
-#nav > li:hover > a,
-#nav .subnav li:hover a {
+#nav-css > li:hover > a,
+#nav-css .subnav-css li:hover a {
     background-color: rgb(204, 204, 204);
 }
 
@@ -221,10 +226,299 @@ html {
 .slider-controls input[type="radio"]:checked + span {
     background-color: #333;
 }
+
+/* begin content */
+/* .table-scroll {
+    height: 100px;
+    overflow-y: auto;
+}
+   */
+
+   .scrollable-table {
+    height: 200px;
+    overflow-y: scroll;
+  }
   
-#content {
-    height: 1000px;
-    width: 100%;
-    /* background-color: aqua; */
+/* end content */
+
+/*begin footer */
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    background-color: #2e2100;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.service a {
+    text-decoration: none;
+}
+
+#footer .top-contact {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #e6f0ff;
+    margin-bottom: 20px;
+}
+
+#footer .Contact-list-text li a {
+    color: #bfbcb2;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+#footer li {
+    list-style-type: none;
+}
+.content-introduce {
+    color: #bfbcb2;
+    line-height: 1.6;
+}
+.click-effect > li:hover a {
+    text-decoration: underline;
+}
+
+.footer-list-info .contact .icon-contact {
+    margin-top: 18px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-list-info .contact .icon-contact a {
+    padding: 4px;
+    text-decoration: none;
+    color: #e6f0ff;
+}
+
+.footer-list-info .contact .icon-contact li {
+    list-style-type: none;
+}
+
+.footer-list-info .contact .icon-contact a:hover {
+    background-color: #000;
+}
+
+.footer-list-info .contact {
+    width: 23%;
+}
+
+.footer-list-info .service {
+    width: 25%;
+}
+
+.footer-list-info .attribute {
+    width: 20%;
+}
+
+.footer-list-info .introduce {
+    width: 25%;
+}
+
+#footer .footer-text {
+    border-top: 1px solid #59554b;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #e6f0ff;
+}
+
+.footer-text > h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+/*End footer */
+.modal-css.open {
+    display: flex;
+}
+
+.modal-css {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal-container {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 1);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.8);
+    position: relative;
+    animation: modalFadeIn ease 0.6s;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.form-heading {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-group-css {
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.form-input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: black;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.form-input::placeholder {
+    color: black;
+}
+
+.form-submit {
+        background: transparent;
+        border: 1px solid black;
+        color: black;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 6px 10px;
+        transition: 0.25s ease-in-out;
+        margin-top: 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .form-group-css-i {
+        color: black;
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    .form-submit:hover {
+        border: 1px solid #54a0ff;
+    } 
+
+.contact-login {
+    margin-top: 20px;
+}
+    
+.contact-login p {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.modal-login .icon-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal-login .icon-contact i {
+    background-color: black;
+    color: #000;
+    padding: 5px;
+}
+
+.modal-login .icon-contact li {
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.icon-facebook {
+    background-color: #2d7cf6;
+}
+.icon-facebook:hover {
+    background: #4d8eef;
+}
+
+.icon-instagram {
+    background-color: #af318d;
+}
+
+.icon-instagram:hover {
+    background: #b63f96;
+}
+
+.modal-login .icon-contact li i {
+    background: transparent;
+}
+
+.modal-login .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+}
+
+.modal-login .contact-login a{
+    text-decoration: none;
+    color: black;
+}
+
+.modal-login .modal-footer a {
+    text-decoration: none;
+} 
+
+.contact-login .icon-mxh {
+    color: #54a0ff;
+}
+
+.modal-login .register-request {
+    margin-left: 10px;
+    color: blue;
+    margin-bottom: 8px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
