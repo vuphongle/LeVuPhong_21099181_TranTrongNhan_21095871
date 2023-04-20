@@ -158,8 +158,8 @@ window.addEventListener('DOMContentLoaded', () => {
         const passlogin = $("#pass-login").val();
       
         const found = $("table tbody tr").toArray().find(function(row) {
-          const rowEmail = $(row).find("td:eq(2)").text();
-          const rowPass = $(row).find("td:eq(5)").text();
+          const rowEmail = $(row).find("td:eq(1)").text();
+          const rowPass = $(row).find("td:eq(4)").text();
           return rowEmail === emaillogin && rowPass === passlogin;
         });
       
