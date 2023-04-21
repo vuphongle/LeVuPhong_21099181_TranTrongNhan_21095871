@@ -1,0 +1,177 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    margin: 60px 0;
+}
+
+.center{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1300px;
+}
+.detai-product{
+    display: flex;
+    gap: 130px;
+}
+
+.price{
+    margin: 40px 0px 50px 20px;
+    font-size: 30px;
+}
+.size-product{
+    /* display: flex; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kichthuoc{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+
+input{
+    overflow: visible;
+}
+.kichthuoc input:focus
+{
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+}
+/* .size-num label .so39{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+} */
+
+.size-num{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    width: 120px;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer; /*chỉnh hiển thị trỏ chuột*/
+    justify-content: center;
+    align-items: center;
+}
+
+.product-quanity{
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 20px 10px;
+}
+
+.product-quanity input{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 2px;
+    outline: none;
+    font-size: 1.4rem;
+    border: 1px solid #CBCBCB;
+}
+
+.product-add-btn button{
+    font: "Arial";
+    font-size: 1.7rem;
+    color: #fff;
+    width: 400px;
+    height: 70px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #084b48;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.product-add-btn button:hover{
+    background-color: transparent;
+    border-color: #084b48;
+    color: #084b48;
+}
+
+.product-mota{
+    margin-top: 30px;
+}
+
+.product-mota-tittle{
+    display: flex;
+}
+
+.product-mota .product-mota-tittle h3{
+    font-size: 1.4rem;
+    padding: 10px 25px;
+    border: 1px solid #CBCBCB;
+    border-bottom: transparent;
+    margin: 0 0;
+}
+
+.product-mota p{
+    padding: 30px 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.4px;
+    line-height: 1.6;
+}
+
+.grid .wide{
+    max-width: 1200px;
+}
+
+.grid{
+    width: 100%;
+    display: block;
+}
+
+.product-lienquan-tittle{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-item{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #8888;
+    padding: 5px;
+}
+
+.product-img{
+    width: 100%;
+    display: block;
+    transition: 0.2s ease-in-out;
+    padding: 10px 0px;
+}
+
+.product-img:hover{
+    transform: scale(1.05);
+}
+
+.product-item .product-name{
+    margin-top: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #084b48;
+}
+
+.product-item .product-price{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #084b48;
+    text-align: center;
+    margin: 5px;
+}

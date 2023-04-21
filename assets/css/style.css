@@ -249,6 +249,10 @@ html {
     margin-right: auto;
 }
 
+#content{
+    margin: 20px 0px;
+}
+
 #footer {
     background-color: #2e2100;
     padding-top: 30px;
