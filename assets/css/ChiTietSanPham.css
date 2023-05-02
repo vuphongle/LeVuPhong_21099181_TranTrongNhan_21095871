@@ -35,7 +35,6 @@
 .kichthuoc input{
     display: none;
 }
-<<<<<<< HEAD
 
 .kichthuoc input:focus
 {
@@ -52,8 +51,6 @@
     position: relative;
     font-weight: bold;
 } */
-=======
->>>>>>> 635de967f2c2024da1c2a3d085e01bbeb6ce4a9e
 
 .kichthuoc label{
     display: block;
