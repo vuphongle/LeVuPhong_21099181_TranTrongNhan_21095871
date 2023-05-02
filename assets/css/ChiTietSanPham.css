@@ -3,9 +3,6 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.main{
-    margin: 60px 0;
-}
 
 .center{
     display: block;
@@ -38,12 +35,15 @@
 input{
     overflow: visible;
 }
+
 .kichthuoc input:focus
 {
     background-color: black;
     color: #fff;
     font-weight: bold;
 }
+  
+  
 /* .size-num label .so39{
     display: flex;
     background-color: black;

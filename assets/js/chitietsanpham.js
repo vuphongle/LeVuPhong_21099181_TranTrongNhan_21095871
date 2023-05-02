@@ -10,7 +10,7 @@ $(document).ready(function () {
     $("#dongia").html(temp.dongia)
     $("#mota").html(temp.mota)
     function napSp(sp){
-          let temp = "<img src='"+sp.hinhanh+"' alt=' ' > " 
+          let temp = "<img src='"+sp.hinhanh+"' alt=' ' class='img-product'> " 
           
         $("#ha").html(temp);
     }
