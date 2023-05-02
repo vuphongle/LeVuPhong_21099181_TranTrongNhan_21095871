@@ -80,7 +80,7 @@
                 <input type="text" value="" class="txt-search" placeholder="Bạn cần tìm gì...">
                 <i class="ti-search icon-search"></i>
                 <i class="ti-user infor-user"></i>
-                <a href="../html/GioHang.html"><i class="ti-bag infor-bag"></i></a>
+                <a href="../html/muaHang.html"><i class="ti-bag infor-bag"></i></a>
             </div>
         </div>
 
@@ -91,10 +91,11 @@
                 </div>
                 <div class="product-info">
                     <h1 id="tensp"> </h1>
-                    <div class="price">
-                    <div  id="dongia">
+                    <div class="price" style="display: flex;">
+                    <h2>Đơn giá: </h2>
+                    <div  id="dongia" style="margin: 10px 5px;">
                        
-                    </div></div>
+                    </div><p style="margin: 10px 3px;">₫</p></div>
                     <div class="size-product">
                         <div class="size-sub">
                             Kích thước:
@@ -147,11 +148,11 @@
                         </div>
                     </div>
                     <div class="product-quanity">
-                        <label for="">Số lượng</label>
-                        <input type="number" min="1" max="100" step="1" value="1" fdprocessedid="4y0ppl">
-                    </div>
+                        <label for="quantity">Số lượng</label>
+                        <input type="number" min="1" max="100" step="1" value="1" id="quantity">
+                    </div>                      
                     <div class="product-add-btn">
-                        <button fdprocessedid="ngg6r">THÊM VÀO GIỎ HÀNG</button>
+                        <button fdprocessedid="ngg6r"><a href="../html/muaHang.html" style="text-decoration: none;color: black;">THÊM VÀO GIỎ HÀNG</a></button>
                     </div>
                 </div>
             </div>

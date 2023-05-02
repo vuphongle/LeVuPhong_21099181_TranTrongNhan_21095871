@@ -20,6 +20,14 @@ $(document).ready(function () {
             napSp(temp);
         });
     });
+// lưu trữ giá trị size
+    const radios = document.getElementsByName('size');
+    for (let i = 0; i < radios.length; i++) {
+    radios[i].addEventListener('click', function() {
+        const size = this.value;
+        localStorage.setItem('size', size);
+    });
+    }
 
     
 });

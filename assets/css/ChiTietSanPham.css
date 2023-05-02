@@ -16,8 +16,9 @@
 }
 
 .price{
-    margin: 40px 0px 50px 20px;
-    font-size: 30px;
+    margin: 40px 0px 50px 0px;
+    font-size: 40px;
+    color: red;
 }
 .size-product{
     /* display: flex; */
