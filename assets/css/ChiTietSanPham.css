@@ -28,13 +28,14 @@
 .kichthuoc{
     display: flex;
     flex-wrap: wrap;
-    width:100%;
+    width:90%;
+    margin-top: 10px;
 }
 
-
-input{
-    overflow: visible;
+.kichthuoc input{
+    display: none;
 }
+<<<<<<< HEAD
 
 .kichthuoc input:focus
 {
@@ -51,22 +52,38 @@ input{
     position: relative;
     font-weight: bold;
 } */
+=======
+>>>>>>> 635de967f2c2024da1c2a3d085e01bbeb6ce4a9e
 
-.size-num{
-    position: relative;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-    width: 120px;
-    background: #fff;
-    border: 1px solid #e9ecef;
+.kichthuoc label{
+    display: block;
+    background-color: #fff;
     color: black;
-    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid #CBCBCB;
+    width: 90px;
     text-align: center;
-    cursor: pointer; /*chỉnh hiển thị trỏ chuột*/
-    justify-content: center;
-    align-items: center;
 }
+
+.kichthuoc label:hover{
+    transition: 0.4s ease-in-out;
+    background-color: #b9b5b5;
+}
+
+.kichthuoc input:checked +label{
+    transition: 0.2s ease-in-out;
+    background-color: #3e3e49;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+}
+.kichthuoc  input:disabled + label {
+    background-color: #ccc;
+    color: #fff;
+    font-weight: 700;
+  }
+
 
 .product-quanity{
     font-size: 1.3rem;
