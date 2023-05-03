@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="./assets/css/stylesubsidiary.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/ChiTietSanPham.css">
+    <link rel="stylesheet" href="./assets/css/DanhSachSanPham.css">
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/mainsubsidiary.js"></script>
+    <script src="./assets/js/dataDanhSachSanPham./assetsjs"></script>
 </head>
 <body>
     <div id="main">
@@ -25,7 +28,7 @@
             </div>
             
             <ul id="nav-css">
-                <li><a href="./assets/html/GioiThieu.html">PHONG NHÂN STORES</a></li>
+                <li><a href="./assets/html/GioiThieu.html#content">PHONG NHÂN STORES</a></li>
                 <li>
                     <a href="./assets/html/Nam.html">
                         NAM
@@ -62,7 +65,7 @@
             </ul>
 
             <div id="infor">
-                <input type="text" value="" class="txt-search" placeholder="Bạn cần tìm gì...">
+                <input type="text" value="" class="txt-search" placeholder="Bạn cần tìm gì./assets.">
                 <i class="ti-search icon-search"></i>
                 <i class="ti-user infor-user"></i>
                 <a href="./assets/html/GioHang.html"><i class="ti-bag infor-bag"></i></a>
@@ -94,31 +97,455 @@
         </div>
 
         <div id="content">
-            <div id="content">
-                <div class="container">
-                    <div class="col-md-12">
-                        <h4 style="text-align: center;">DANH SÁCH ĐĂNG KÝ THÀNH CÔNG</h4>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Họ và tên</th>
-                                    <th>Email</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Pass</th>
-                                    <th>Số điện thoại</th>
-                                </tr>
-                            </thead>
-                        </table>
-                        <div class="scrollable-table">
-                        <table class="table table-striped">
-                            <tbody></tbody>
-                        </table>
-                        </div>
+            <h1 class="tieuDe">Sản phẩm bán chạy</h1>
+            <div class="containerDS" style="margin-bottom: 100px;">
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(1)"><img src="./assets/img/GiayNam/hsm000500reu__10__b1318ea901524a578aeaec64bbd025df_grande.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(1)"> Giày Thể Thao Nam Bitis Hunter Core HSM000500REU (Rêu)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        785,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(1)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
                     </div>
                 </div>
-            </div>                            
-        </div>
+            <!-- sp2 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(2)"> <img src="./assets/img/GiayNam/hsm000500den__10__76b2e099477f4b91b9cb90997b8284ad_grande.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(2)"> Giày Thể Thao Nam Bitis Hunter Core HSM000500DEN (Đen)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            785,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(2)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                            </div>
+                </div>
+            <!-- sp3 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(3)"><img src="./assets/img/GiayNam/dsmh10900xam__10__d23e9382a6684710b18d1306378279a5_grande.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(3)">Giày Thể Thao Nam Hunter Core - Gravity Leap collection DSMH10900XAM (Xám)</a>
+                            </h4>
+                    </div>
+                        <div class="main-price">
+                            773,100 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(3)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp4 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(4)"><img src="./assets/img/GiayNam/dsmh10900den__10__68e26cc077294ac9b8783f2f18b22c9d_grande.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(4)">Giày Thể Thao Nam Hunter Core - Gravity Leap collection DSMH10900den (Đen)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            773,100 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(4)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp5 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(5)"><img src="./assets/img/DepNam/dem053010nau__3__4edf87520090438da9574120c702e15b_grande.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(5)">Dép Eva Phun Nam Bitis DEM053010NAU (Nâu)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            93,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(5)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+                <!-- sanpham6 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(6)"><img src="./assets/img/DepNam/bem000900den__10__d81940d13abf4bb5b5a382da22a24415_grande.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(6)">Dép Eva Nam BEM000900DEN (Đen)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            190,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(6)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp7 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(7)"><img src="./assets/img/DepNam/bem000900xam__10__8ba9ac9f77c24a03af9bdfff4024a9fc_grande.webp" alt="" sizes=""></a> 
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(7)">Dép Eva Nam BEM000900XAM (Xám)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            190,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(7)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp8 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(8)"><img src="./assets/img/DepNam/bem000900trg__10__f7beb7e533c04fa3ab29ed1d5bf63822_grande.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(8)">Dép Eva Nam BEM000900TRG (Trắng)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            190,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(8)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp9 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(9)"><img src="./assets/img/DepNam/z4025439609973_afe11c56d523b1a9b10bda844d8421de_3b1be2074d3c420ea59f6ce4cf02302a_grande.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(9)">Dép Si Cao Su Nam Biti's DRM042800CAM (Cam)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            298,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(9)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+            <!-- sp10 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(10)"><img src="./assets/img/DepNam/z4026621796770_12707edf9a8ec44a6ade0ef46afc97bc_c90d3a0ebfd24affb0ceeeb4e904e8df_grande.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                            <h4>
+                                <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(10)">Dép Si Cao Su Nam Biti's DRM042800XDG (Xanh Dương)</a>
+                            </h4>
+                        </div>
+                        <div class="main-price">
+                            298,000 ₫
+                        </div>
+                        <div class="muahang">
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(10)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                        </div>
+                </div>
+
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(17)"><img src="./assets/img/StandaNu/1.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(17)"> Sandal Nữ DYW008200DEN (Đen)*</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        450,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(17)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp18 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(18)"><img src="./assets/img/GotNu/2.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(18)">Sandal Cao Gót Nữ Bitis BFW001688TRG (Trắng)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        475,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(18)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+                <!-- sp19 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(19)"><img src="./assets/img/GotNu/3.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(19)">Sandal Cao Gót Nữ Bitis BFW001688NAU (Nâu)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        475,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(19)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp20 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(20)"><img src="./assets/img/GotNu/4.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(20)">Sandal Cao Gót Nữ Bitis BFW001688DEN (Đen)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        475,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(20)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp21 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(21)"><img src="./assets/img/GotNu/5.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(21)">Giày Thời Trang Cao Gót Nữ Bitis BFW001588NAU (Nâu)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        460,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(21)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp22 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(22)"><img src="./assets/img/GotNu/6.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(22)">Giày Thời Trang Cao Gót Nữ Biti's BFW001588DEN (Đen)
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        460,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(22)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp23 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(23)"><img src="./assets/img/GiayNu/7webp.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(23)">Giày Búp Bê Nữ Biti's BBW000588XAM (Xám)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        395,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(23)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp24 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(24)"><img src="./assets/img/GiayNu/8.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(24)">Giày Búp Bê Nữ Biti's BBW000588KEM (Kem)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        395,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(24)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp25 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(25)"><img src="./assets/img/GiayNu/9.jpg" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(25)">Giày Thể Thao Nữ Gosto GFW018500XDL (Xanh Dương Lợt)
+                            </a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        999,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(25)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp26 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(26)"><img src="./assets/img/GiayNu/10.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(26)">Giày Thể Thao Nữ Gosto GFW018500TRG (Trắng)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        999,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(26)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp27 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(27)"><img src="./assets/img/GiayNu/11.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(27)">Giày Si Búp Bê Nữ Biti's BBW000488KEM (Kem)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        395,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(27)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp28 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(28)"><img src="./assets/img/StandaNu/12.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(28)">Sandal Si - TPR Nữ Biti's DTW011388KEM (Kem)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        295,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(28)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp29 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(29)"><img src="./assets/img/StandaNu/13.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(29)">Sandal Nữ DYW008400XLC (Xanh Lá Cây)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        455,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(29)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp30 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(30)"><img src="./assets/img/StandaNu/14.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(30)">Sandal Nữ DYW008400KEM (Kem)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        455,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(30)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+    <!-- sp31 -->
+                <div class="item">
+                    <div class="phanAnh">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(31)"><img src="./assets/img/StandaNu/15.webp" alt="" sizes=""></a>
+                    </div>
+                    <div class="text">
+                        <h4>
+                            <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(31)">Sandal Nữ DYW008400DEN (Đen)</a>
+                        </h4>
+                    </div>
+                    <div class="main-price">
+                        455,000 ₫
+                    </div>
+                    <div class="muahang">
+                        <a href="./assets/html/ChiTietSanPham.html" onclick="setMasp(31)"><input type="submit" value="MUA HÀNG" style="width: 100px;height: 30px;background-color: black;color: white;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-md-12">
+                    <h4 style="text-align: center;">DANH SÁCH ĐĂNG KÝ THÀNH CÔNG</h4>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Họ và tên</th>
+                                <th>Email</th>
+                                <th>Địa chỉ</th>
+                                <th>Ngày sinh</th>
+                                <th>Pass</th>
+                                <th>Số điện thoại</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>                            
 
         <div id="footer">
             <div class="main-content">

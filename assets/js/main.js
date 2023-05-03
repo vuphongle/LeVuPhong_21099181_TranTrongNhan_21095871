@@ -350,7 +350,7 @@ $(document).ready(function(){
         // Thêm dữ liệu vào localStorage
         localStorage.setItem("danhSachNguoiDung", them + localStorage.getItem("danhSachNguoiDung"));
         // Lấy dữ liệu từ localStorage và thêm vào bảng
-        $("table tbody").html(localStorage.getItem("danhSachNguoiDung"));
+        $(".table-striped tbody").html(localStorage.getItem("danhSachNguoiDung"));
 
         // Lấy dữ liệu từ localStorage và hiển thị trên bảng
   
@@ -359,7 +359,7 @@ $(document).ready(function(){
     });
     
     if (localStorage.getItem("danhSachNguoiDung")) {
-        $("table tbody").html(localStorage.getItem("danhSachNguoiDung"));
+        $(".table-striped tbody").html(localStorage.getItem("danhSachNguoiDung"));
     }    
     // Xóa dữ liệu đăng ký
     // localStorage.removeItem("danhSachNguoiDung");
