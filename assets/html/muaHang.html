@@ -12,7 +12,7 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/main.js"></script>
     <script src="../js/mainsubsidiary.js"></script>
     <script src="../js/muahang.js"></script>
     <script>
@@ -71,7 +71,7 @@
                 <input type="text" value="" class="txt-search" placeholder="Bạn cần tìm gì...">
                 <i class="ti-search icon-search"></i>
                 <i class="ti-user infor-user"></i>
-                <a href="../html/GioHang.html"><i class="ti-bag infor-bag"></i></a>
+                <a href="#!"><i class="ti-bag infor-bag"></i></a>
             </div>
         </div>
 
@@ -107,9 +107,9 @@
                 </div>
                 <div class="body">
                     <form role="form" class="form-horizontal" style="margin-top: 10px;">
-                        <div class="row mb-sm-3">
-                            <label for="diachi" class="control-label mr-md-2">Địa chỉ nhận hàng</label>
-                            <input type="text" id="diachi" class="col-md-9" placeholder="Nhập địa chỉ" required>
+                        <div class="row" style="margin: 30px 0;">
+                            <label for="diachi" class="control-label col-md-2" style="text-align: left;">Địa chỉ nhận hàng:</label>
+                            <input type="text" id="diachi" class="col-md-10" placeholder="Nhập địa chỉ" required>
                         </div>
                         <div class="row">
                             <table class="table table-bordered table-hover table-striped">
@@ -127,7 +127,7 @@
                                         <td id="tensp"></td>
                                         <td>
                                             <div class="soluong">
-                                                <input type="text" onkeyup="capnhatTien()" id="quantity" name="quantity" class="px-2 text-center form-control input-number" value="" min="1" max="20">
+                                                <input type="text" onkeyup="capnhatTien()" id="quantity" name="quantity" class="px-2 text-center form-control input-number" value="1" min="1" max="20">
 
                                             </div>
                                         </td>
@@ -140,13 +140,13 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="" class="mr-sm-5">Đơn vị vận chuyển:</label>
-                            <select id="seldvvc" class="col-md-2 col-lg-2" onclick="capnhatTien()">
+                            <label for="" class="">Đơn vị vận chuyển:</label>
+                            <select id="seldvvc" class="" onclick="capnhatTien()">
                                 <option value="Nhanh" selected>Nhanh</option>
                                 <option value="Bình thường">Bình thường</option>
                             </select>
                             <span style="margin-left: 10px; color: red;" class="mt-sm-1">₫</span>
-                            <input type="text" class="col-md-1" id="txtDongia" readonly value="90000" style="color: red; border: none; outline: none;">
+                            <input type="text" class="" id="txtDongia" readonly value="90000" style="color: red; border: none; outline: none;">
                         </div>
                         <div class="form-group row hinhthucthanhtoan">
                             <label for="" class="mr-sm-3">Hình thức thanh toán: </label> <br>

@@ -9,6 +9,7 @@ $(document).ready(function () {
         alert("Đã đặt hàng thành công")
     })
 
+    capnhatTien();
 })
 
 let dssp = JSON.parse(localStorage.getItem("dssp"))
@@ -59,4 +60,6 @@ $(document).ready(function () {
   }
 
   napSP(temp);
+
+
 });

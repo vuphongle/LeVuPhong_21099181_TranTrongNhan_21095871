@@ -359,7 +359,7 @@ $(document).ready(function(){
     });
     
     if (localStorage.getItem("danhSachNguoiDung")) {
-        $(".table-striped tbody").html(localStorage.getItem("danhSachNguoiDung"));
+        $(".table-dangky tbody").html(localStorage.getItem("danhSachNguoiDung"));
     }    
     // Xóa dữ liệu đăng ký
     // localStorage.removeItem("danhSachNguoiDung");

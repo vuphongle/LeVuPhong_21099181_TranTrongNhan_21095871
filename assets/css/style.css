@@ -21,6 +21,7 @@ html {
     border-bottom: 1px solid #efefef;
     z-index: 99;
     transition: top 0.3s;
+    min-width: 1170px;
 }
 
 #header.hidden {
@@ -103,6 +104,14 @@ html {
     gap: 20px; /* khoảng cách giữa các đối tượng con */
     padding-right: 20px;
 } 
+#infor i {
+    color: black;
+}
+
+#infor > a {
+    color: black;
+    margin-top: 6px;
+}
 
 .infor-search {
     padding: 22px 0;
@@ -145,6 +154,7 @@ html {
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-width: 1170px;
   }
   
 .slider-wrapper {
@@ -252,12 +262,14 @@ html {
 
 #content{
     margin: 20px 0px;
+    min-width: 1170px;
 }
 
 #footer {
     background-color: #2e2100;
     padding-top: 30px;
     padding-bottom: 30px;
+    min-width: 1170px;
 }
 
 #footer .container {
