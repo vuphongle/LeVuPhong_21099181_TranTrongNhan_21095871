@@ -30,4 +30,18 @@ $(document).ready(function () {
     }
 
     
+    // Lấy giá trị quantity từ localStorage (nếu có)
+  const quantity = localStorage.getItem('quantity');
+
+  // Nếu quantity đã lưu trong localStorage thì cập nhật giá trị cho input quantity
+  if (quantity !== null) {
+    $('#quantity').val(quantity);
+  }
+
+  // Lưu giá trị mới vào localStorage mỗi khi giá trị input quantity thay đổi
+  $('#quantity').on('change', function () {
+    const newQuantity = $(this).val();
+    localStorage.setItem('quantity', newQuantity);
+  });
+    
 });

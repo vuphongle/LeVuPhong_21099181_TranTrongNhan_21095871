@@ -16,19 +16,17 @@ let dssp = JSON.parse(localStorage.getItem("dssp"))
 
 function capnhatTien() {
     let masp = localStorage.getItem("masp")
-
     let temp = dssp.find(sp => sp.masp == masp)
+    const quantity = localStorage.getItem('quantity');
+    $("#soluong").html(quantity);
 
-    let regexSoluong = /^\d+$/
-
-    let soluong = document.getElementById("quantity")
-
-    const sl = Number(soluong.value)
-    if (sl == 0)
-        alert("Số lượng phải lớn hơn 0")
-    if (!regexSoluong.test(sl))
-        alert("Chỉ được nhập số")
-
+    let regexSoluong = /^\d+$/;
+    if (!regexSoluong.test(quantity)) {
+        console.log("Số lượng không hợp lệ")
+        return false;
+    }
+  
+    const sl = parseInt(quantity);
     let thanhtien = sl * temp.dongia
 
     $('#thanhtien').html(thanhtien);
@@ -42,6 +40,7 @@ function capnhatTien() {
     return true
 }
 
+
 $(document).ready(function () {
   let dssp = JSON.parse(localStorage.getItem("dssp"));
   let masp = localStorage.getItem("masp");
@@ -53,6 +52,9 @@ $(document).ready(function () {
 
   const size = localStorage.getItem('size');
   $("#size").html(size);
+
+  const quantity = localStorage.getItem('quantity');
+  $("#soluong").html(quantity);
 
   function napSP(sp) {
     let temp = "<img src='" + sp.hinhanh + "' alt='' class='v-100' style='height: 500px;'>";
