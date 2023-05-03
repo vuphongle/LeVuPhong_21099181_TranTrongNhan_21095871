@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Giày Dép Nam</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/Header/iconweb.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ChiTietSanPham.css">
+    <link rel="stylesheet" href="../css/DanhSachSanPham.css">
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
     <script src="../js/main.js"></script>
-    <script src="../js/muahang.js"></script>
+    <script src="../js/dataDanhSachSanPham..js"></script>
     <script>
         function setMasp(masp){
             localStorage.setItem("masp",masp)
@@ -47,8 +49,8 @@
                         <i class="ti-angle-down"></i>
                         <ul class="subnav-css">
                             <li><a href="../html/Nu.html#sandalnu">Sandal</a></li>
-                            <li><a href="../html/Nu.html#giaynu" >Giày</a></li>
-                            <li><a href="../html/Nu.html#caogotnu" >Giày cao gót</a></li>
+                            <li><a href="../html/Nu.html#giaynu">Giày</a></li>
+                            <li><a href="../html/Nu.html#caogotnu">Giày cao gót</a></li>
                         </ul>
                     </a>
                 </li>
@@ -70,7 +72,7 @@
                 <input type="text" value="" class="txt-search" placeholder="Bạn cần tìm gì...">
                 <i class="ti-search icon-search"></i>
                 <i class="ti-user infor-user"></i>
-                <a href="#!"><i class="ti-bag infor-bag"></i></a>
+                <a href="../html/muaHang.html#content"><i class="ti-bag infor-bag"></i></a>
             </div>
         </div>
 
@@ -98,72 +100,9 @@
               </div>
         </div>
 
-       <div id="content">
-        <div class="container my-md-5 py-md-3 px-md-5 bg-light">
-            <div class="DatMua">
-                <div class="header">
-                    <h2 class="text-center">ĐẶT MUA SẢN PHẨM</h2>
-                </div>
-                <div class="body">
-                    <form role="form" class="form-horizontal" style="margin-top: 10px;">
-                        <div class="row" style="margin: 30px 0;">
-                            <label for="diachi" class="control-label col-md-2" style="text-align: left;">Địa chỉ nhận hàng:</label>
-                            <input type="text" id="diachi" class="col-md-10" placeholder="Nhập địa chỉ" required>
-                        </div>
-                        <div class="row">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Tên sản phẩm</th>
-                                        <th>Số lượng</th>
-                                        <th>Size</th>
-                                        <th>Đơn giá</th>
-                                        <th>Thành tiền</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td id="tensp"></td>
-                                        <td>
-                                            <div class="soluong">
-                                                <input type="text" onkeyup="capnhatTien()" id="quantity" name="quantity" class="px-2 text-center form-control input-number" value="1" min="1" max="20">
-
-                                            </div>
-                                        </td>
-                                        <td id="size"></td>
-                                        <td id="dongia"></td>
-                                        <td id="thanhtien"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="" class="">Đơn vị vận chuyển:</label>
-                            <select id="seldvvc" class="" onclick="capnhatTien()">
-                                <option value="Nhanh" selected>Nhanh</option>
-                                <option value="Bình thường">Bình thường</option>
-                            </select>
-                            <span style="margin-left: 10px; color: red;" class="mt-sm-1">₫</span>
-                            <input type="text" class="" id="txtDongia" readonly value="90000" style="color: red; border: none; outline: none;">
-                        </div>
-                        <div class="form-group row hinhthucthanhtoan">
-                            <label for="" class="mr-sm-3">Hình thức thanh toán: </label> <br>
-                            <input class="mt-sm-2" type="radio" name="httt" id="radtindung"><label for="radtindung" class="mr-sm-3">Thẻ tín dụng/Ghi nợ</label>
-                            <input class="mt-sm-2" type="radio" name="httt" id="radtienmat" checked><label for="radtienmat">Thanh toán
-                                khi nhận hàng</label>
-                        </div>
-                    </form>
-                    <div class="row mb-md-2">Tổng tiền: <span class="ml-md-2" id="tongtien" style="color: red;"></span></div>
-                </div>
-                <div class="footer row">
-                    <button class="btn btn-sucess btn-group-justified" id="btndathang" type="button" style="color: white; background-color: green;">
-                        ĐẶT HÀNG
-                    </button>
-                </div>
-            </div>
+        <div id="content">
+            <img src="../img/Sitemap/sitemap.jpg" alt="">
         </div>
-       </div>
     </div>
 <!-- end:sandal nam -->
 <!-- end center-item -->
